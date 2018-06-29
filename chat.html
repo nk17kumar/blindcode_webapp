@@ -139,23 +139,23 @@
     function add(msg)
     {
       array.push(msg);
-      document.getElementById("chatbox").innerHTML = "<div class='chat self'><div class='user-photo'></div><p class='chat-message'>" + msg + "</p></div>";
+      document.getElementById("chatbox").innerHTML+= "<div class='chat self'><div class='user-photo'></div><p class='chat-message'>" + msg + "</p></div>";
       idx = idx + 1 ;
       switch (idx) {
         case 1:
-          document.getElementById("chatbox").innerHTML = "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "what's your name ?" + "</p></div>";
+          document.getElementById("chatbox").innerHTML += "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "what's your name ?" + "</p></div>";
           break;
         case 2:
-          document.getElementById("chatbox").innerHTML = "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "your college name?" + "</p></div>";
+          document.getElementById("chatbox").innerHTML += "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "your college name?" + "</p></div>";
           break;
         case 3:
-          document.getElementById("chatbox").innerHTML = "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "your contact number ?" + "</p></div>";
+          document.getElementById("chatbox").innerHTML += "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "your contact number ?" + "</p></div>";
           break;
         case 4:
-          document.getElementById("chatbox").innerHTML = "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "Thanks for the information you can proceed further now." + "</p></div>";
+          document.getElementById("chatbox").innerHTML += "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "Thanks for the information you can proceed further now." + "</p></div>";
           break;
         default:
-          document.getElementById("chatbox").innerHTML = "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "Sorry but i am not supposed to talk further" + "</p></div>";
+          document.getElementById("chatbox").innerHTML += "<div class='chat friend'><div class='user-photo'></div><p class='chat-message'>" + "Sorry but i am not supposed to talk further" + "</p></div>";
           break;
       }
     }
